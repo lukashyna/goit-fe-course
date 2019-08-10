@@ -1,0 +1,115 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: #ffffff;
+}
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+/* navigation */
+.menu {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px;
+    padding: 76px 164px 92px;
+    font-size: 0px;
+    list-style: none;
+    text-align: center;
+}
+.menu li {
+    display: inline-block;
+    width: 113px;
+    height: 42px;
+    font-size: 14px;
+    margin-right: 40px;
+    
+}
+.menu li :last-child {
+    margin-right: 0px;
+}
+.menu a {
+    color: #626262;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 24px;
+    
+}
+.menu :last-child{
+    margin: 0px;
+}
+
+.menu li :hover,
+.menu li :focus {
+    color: #25b4f5;
+}
+/* section */
+.Journal_article {
+    display: inline-block;
+    font-size: 0;
+}
+article {
+    display: inline-block;
+    width: 420px;
+    margin-right: 60px;
+    margin-bottom: 130px;
+}
+.Journal_article :nth-child(2n){
+    margin-right: 0px;
+}
+.Journal_article :nth-child(5){
+    margin-bottom: 0px;
+}
+.Journal_article :nth-child(6){
+    margin-bottom: 0px;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.menu-link {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: "Ubuntu";
+    line-height: 17px;
+    color: #b4ad9e;
+    margin-bottom: 24px;  
+}
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 33px;
+}
+.text-article {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify;
+}
+.load-button {
+    border: 1px #626262 solid;
+    margin: 50px 357px;
+    padding: 18px 33px;
+    min-width: 164px;
+    height: 58px;
+    text-transform: inherit;
+    background-color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #626262;
+}
