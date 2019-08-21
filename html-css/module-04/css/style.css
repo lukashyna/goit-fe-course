@@ -1,0 +1,212 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit
+}
+body {
+    font-family: "Roboto", sans-serif;
+    color: #555252;
+    font-size: 14px;
+    line-height: 26px;
+}
+.clearfix::after{
+    display:table;
+    content: "";
+    clear: both;
+}
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* navigation */
+.main-nav{
+    height: 160px;
+}
+.site-logo {
+    display: block;
+    float: left;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 38px;
+}
+.site-logo::first-letter{
+    font-weight: 700;
+    color: #1abc9c;
+}
+.main-menu{
+    display: block;
+    float: right;
+    width: 465px;
+    padding-left: 0px;
+    margin-top: 43px;
+}
+.menu-item{
+    display: block;
+    float: left;
+    list-style: none;
+}
+.main-menu :not(:last-child){
+    margin-right: 28px;
+}
+.main-menu a{
+    display: block;
+    color: #0f0101;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+.main-menu :hover,
+.main-menu :focus  {
+    color: #1abc9c;
+}
+
+/* content section products */
+
+.featured-products {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+
+} 
+.featured-products::after{
+    display: block;
+    height: 7px;
+    width: 164px;
+    background-color: #1abc9c;
+    content: '';
+    margin: 26px auto 92px;
+}
+.featured-products-list{
+    padding: 0px;
+    height: 675px;
+    margin-top: 0;
+    margin-bottom: 100px;
+}
+.featured-products-item {
+    display: block;
+    float: left;
+
+}
+.featured-products-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+.featured-products-item:not(:nth-child(n+4)) {
+    margin-bottom: 30px;
+}
+.featured-products-list h3{
+    display: block;
+    float: left;
+    height: 40px;
+    width: 201px;
+    font-size: 18px;
+    line-height:32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #323232;
+    margin: 0;
+    padding: 4px 13px ;
+
+}
+.featured-products-list p{
+    display: block;
+    float: left;
+    height: 40px;
+    width: 54px;
+    font-size: 18px;
+    line-height:40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background-color: #8c8c8c;
+    margin: 0;
+
+}
+.featured-products-list :hover h3{
+    background-color: #1abc9c;
+}
+.featured-products-list :hover p{
+    background-color: #7fd9c7;
+}
+/* section blog */
+.latest-news{
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+.latest-news::after{
+    display: block;
+    height: 7px;
+    width: 164px;
+    background-color: #1abc9c;
+    content: '';
+    margin: 26px auto 81px;
+}
+.latest-news-list {
+    padding: 0px;
+    height: 495px;
+    margin-top: 0;
+    margin-bottom: 83px;
+}
+.latest-news-item {
+    display: block;
+    float: left;
+    width: 350px;
+}
+.latest-news-item:not(:last-child) {
+    margin-right: 30px;
+}
+.latest-news-list h3 {
+    font-size: 18px;
+    line-height:26px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 14px;
+}
+.latest-news-list h3::after{
+    display: block;
+    height: 3px;
+    width: 136px;
+    background-color: #1abc9c;
+    content: '';
+    margin-top: 11px;
+    margin-bottom: 27px;
+}
+.latest-news-list p {
+    font-size: 18px;
+    line-height:26px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 13px;
+}
+button{
+    border: none;
+    min-width: 160px;
+    height: 51px;
+    background-color: #1abc9c;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    border-radius: 3px;
+}
