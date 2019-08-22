@@ -27,8 +27,9 @@ img{
     height: auto;
 }
 /* navigation */
-.main-nav{
-    height: 160px;
+.main-header {
+    padding-top: 43px;
+    padding-bottom: 100px;
 }
 .site-logo {
     display: block;
@@ -36,8 +37,8 @@ img{
     font-size: 30px;
     line-height: 32px;
     font-weight: 400;
+    margin: 0;
     text-transform: uppercase;
-    margin-top: 38px;
 }
 .site-logo::first-letter{
     font-weight: 700;
@@ -48,7 +49,6 @@ img{
     float: right;
     width: 465px;
     padding-left: 0px;
-    margin-top: 43px;
 }
 .menu-item{
     display: block;
@@ -69,8 +69,8 @@ img{
     text-transform: uppercase;
     
 }
-.main-menu :hover,
-.main-menu :focus  {
+.main-menu a:hover,
+.main-menu a:focus  {
     color: #1abc9c;
 }
 
@@ -82,6 +82,8 @@ img{
     font-weight: 900;
     text-transform: uppercase;
     text-align: center;
+    margin: 0;
+    margin-bottom: 92px;
 
 } 
 .featured-products::after{
@@ -90,7 +92,8 @@ img{
     width: 164px;
     background-color: #1abc9c;
     content: '';
-    margin: 26px auto 92px;
+    margin: auto;
+    margin-top: 26px;
 }
 .featured-products-list{
     padding: 0px;
@@ -163,9 +166,8 @@ img{
 }
 .latest-news-list {
     padding: 0px;
-    height: 495px;
     margin-top: 0;
-    margin-bottom: 83px;
+    padding-bottom: 83px;
 }
 .latest-news-item {
     display: block;
@@ -180,6 +182,7 @@ img{
     line-height:26px;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
     margin-top: 14px;
 }
 .latest-news-list h3::after{
@@ -196,17 +199,22 @@ img{
     line-height:26px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
     margin-bottom: 13px;
 }
-button{
+.latest-news-list a{
+    display: inline-block;
     border: none;
-    min-width: 160px;
+    width: 160px;
     height: 51px;
     background-color: #1abc9c;
     font-size: 16px;
+    text-decoration: none;
     line-height: 26px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    text-align: center;
+    padding-top: 14px;
     color: #fff;
     border-radius: 3px;
 }
