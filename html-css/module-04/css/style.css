@@ -48,6 +48,7 @@ img{
     display: block;
     float: right;
     width: 465px;
+    margin: 0;
     padding-left: 0px;
 }
 .menu-item{
@@ -153,8 +154,10 @@ img{
     font-size: 48px;
     line-height: 58px;
     font-weight: 900;
+    margin: 0;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 83px;
 }
 .latest-news::after{
     display: block;
@@ -162,7 +165,8 @@ img{
     width: 164px;
     background-color: #1abc9c;
     content: '';
-    margin: 26px auto 81px;
+    margin: auto;
+    margin-top: 26px;
 }
 .latest-news-list {
     padding: 0px;
