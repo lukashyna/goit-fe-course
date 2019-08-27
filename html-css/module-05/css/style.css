@@ -1,0 +1,322 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit
+}
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #e9f0fd;
+    color: #555252;
+    font-size: 14px;
+    line-height: 26px;
+}
+.clearfix::after{
+    display:table;
+    content: "";
+    clear: both;
+}
+.container{
+    position: relative;
+    width: 1110px;
+    margin: 0 auto;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* navigation */
+.main-header {
+    position: relative;
+    height: 91px;
+}
+.site-logo {
+    position: absolute;
+    top: 37px;
+    left: 0;
+    display: block;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+}
+.site-logo::first-letter{
+    font-weight: 700;
+    color: #1abc9c;
+}
+.main-menu{
+    position: absolute;
+    top: 42px;
+    right: 0;
+    display: block;
+    width: 465px;
+    margin: 0;
+    padding-left: 0px;
+}
+.menu-item{
+    display: block;
+    float: left;
+    list-style: none;
+}
+.main-menu :not(:last-child){
+    margin-right: 28px;
+}
+.main-menu a{
+    display: block;
+    color: #0f0101;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+.main-menu a:hover,
+.main-menu a:focus  {
+    color: #1abc9c;
+}
+/* content section 1*/
+
+.slider{
+    margin-bottom: 95px;
+}
+.slides{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.slides-item{
+    list-style: none;
+}
+.slides-image{
+    min-height: 601px;
+    margin-left: -180px;
+    background-image: linear-gradient(to right, rgba(0, 0, 2, 0.5), rgba(0, 0, 2, 0.5)), url(../img/banner.jpg);
+    width: 1409px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slider-ctrl {
+    position: absolute;
+    top: 224px;
+    border:none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 104px;
+    height: 104px;
+    background-color: #4ec6ab;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    z-index: 1;
+   
+}
+.slider-ctrl-prev {
+    background-image: url(../img/icons/prev.png);
+    left: 0px;
+}
+.slider-ctrl-next {
+    background-image: url(../img/icons/next.png);
+    right: 0px;
+}
+
+.slider .slider-ctrl:hover{
+    background-color: #1abc9c;
+    opacity: 1;
+  }
+.slides-title {
+    position: absolute;
+    top: 200px;
+    left: 185px;
+    margin: 0;
+    font-size: 60px;
+    line-height: 82px;
+    font-family: "Roboto";
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+.slides-descr {
+    position: absolute;
+    top: 283px;
+    left: 185px;
+    margin: 0;
+    font-size: 24px;
+    line-height: 54px;
+    font-family: "Roboto";
+    font-weight: 300;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+/* content section 2*/
+.collection {
+    margin-bottom: 100px;
+}
+.new-collection {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 82px;
+
+} 
+.new-collection::after{
+    display: block;
+    height: 7px;
+    width: 164px;
+    background-color: #1abc9c;
+    content: '';
+    margin: auto;
+    margin-top: 26px;
+}
+.new-collection-list{
+    padding: 0px;
+    height: 322px;
+    margin: 0;
+}
+.new-collection-item {
+    position: relative;
+    display: block;
+    float: left;
+
+}
+.new-collection-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+.new-collection-list h3{
+    display: block;
+    float: left;
+    height: 40px;
+    width: 201px;
+    font-size: 18px;
+    line-height:32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #323232;
+    margin: 0;
+    padding: 4px 13px ;
+
+}
+.new-collection-list p{
+    display: block;
+    float: left;
+    height: 40px;
+    width: 54px;
+    font-size: 18px;
+    line-height:40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background-color: #8c8c8c;
+    margin: 0;
+
+}
+.new-collection-list :hover h3{
+    background-color: #1abc9c;
+}
+.new-collection-list :hover p{
+    background-color: #7fd9c7;
+}
+.card {
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 255px;
+    height: 282px;
+    border: 10px solid rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+}
+.card-button {
+    padding: 0;
+    margin: 0;
+}
+.card-button li{
+    display: block;
+    list-style: none;
+}
+.image-button{
+    position: absolute;
+    top:80px;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #ffffff;
+    background-color: rgba(255,255,255,0);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.like-button {
+    background-image: url(../img/icons/icon1.png);
+    left: 35px;
+}
+.arrow-button {
+    background-image: url(../img/icons/icon2.png);
+    left: 94px;
+}
+.time-button {
+    background-image: url(../img/icons/icon3.png);
+    right: 34px;
+}
+.basket-button {
+    position: absolute;
+    left: 35px;
+    bottom:75px;
+    background-image: url(../img/icons/basket.png);
+    padding-left: 58px;
+    margin: 0;
+    height: 50px;
+    width: 166px;
+    font-size: 14px;
+    font-family: "OpenSans";
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 32px;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid #ffffff;
+    background-color: #323232;
+    background-repeat: no-repeat;
+    background-position: 13px 10px;
+    cursor: pointer;
+}
+.card-button :hover{
+    background-color: #1abc9c;
+}
+.new-collection-list :hover div{
+    opacity: 1;
+}
+footer{
+    height: 88px;
+    background-color: #323232;
+    padding-top: 32px;
+}
+.footer-rights {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 16px;
+    font-family: "OpenSans";
+    color: #fefefe;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+}
+.footer-rights a{
+    color: #46bfa9;
+    text-decoration: none;
+}

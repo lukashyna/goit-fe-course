@@ -14,6 +14,10 @@ body {
     margin: 0 auto;
 }
 /* navigation */
+.main-header {
+    padding: 0;
+    height: 192px;;
+}
 .menu {
     display: inline-block;
     vertical-align: middle;
@@ -56,7 +60,12 @@ body {
     display: inline-block;
     font-size: 0;
 }
-article {
+.Journal_article ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li {
     display: inline-block;
     width: 420px;
     margin-right: 60px;
@@ -85,12 +94,14 @@ img {
     font-family: "Ubuntu";
     line-height: 17px;
     color: #b4ad9e;
+    margin: 0;
     margin-bottom: 24px;  
 }
 h2 {
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
+    margin: 0;
     margin-bottom: 33px;
 }
 .text-article {
@@ -98,6 +109,8 @@ h2 {
     font-weight: 400;
     line-height: 24px;
     text-align: justify;
+    margin: 0;
+    padding: 0;
 }
 .load-button {
     border: 1px #626262 solid;

@@ -171,7 +171,6 @@ img{
 .latest-news-list {
     padding: 0px;
     margin-top: 0;
-    padding-bottom: 83px;
 }
 .latest-news-item {
     display: block;
@@ -221,4 +220,8 @@ img{
     padding-top: 14px;
     color: #fff;
     border-radius: 3px;
+}
+.latest-news-item :hover{
+    color: rgb(11, 59, 57);
+    box-shadow: 0 0 5px 5px rgba(52, 185, 185, 0.5)
 }
