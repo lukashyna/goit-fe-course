@@ -8,7 +8,7 @@ html {
 }
 body {
     font-family: "Roboto", sans-serif;
-    background-color: #e9f0fd;
+    background-color: #ffffff;
     color: #555252;
     font-size: 14px;
     line-height: 26px;
@@ -81,6 +81,9 @@ img{
     color: #1abc9c;
 }
 /* content section 1*/
+.main-content{
+    background-color: #e9f0fd;
+}
 
 .slider{
     margin-bottom: 95px;
