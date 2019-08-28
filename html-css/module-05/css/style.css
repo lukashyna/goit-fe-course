@@ -30,14 +30,12 @@ img{
 }
 /* navigation */
 .main-header {
-    position: relative;
-    height: 91px;
+    padding-top: 37px;
+    padding-bottom: 31px;
 }
 .site-logo {
-    position: absolute;
-    top: 37px;
-    left: 0;
     display: block;
+    float: left;
     font-size: 30px;
     line-height: 32px;
     font-weight: 400;
@@ -49,12 +47,11 @@ img{
     color: #1abc9c;
 }
 .main-menu{
-    position: absolute;
-    top: 42px;
-    right: 0;
     display: block;
+    float: right;
     width: 465px;
     margin: 0;
+    padding-top: 3px;
     padding-left: 0px;
 }
 .menu-item{
@@ -85,9 +82,6 @@ img{
     background-color: #e9f0fd;
 }
 
-.slider{
-    margin-bottom: 95px;
-}
 .slides{
     position: relative;
     margin: 0;
@@ -161,7 +155,8 @@ img{
 }
 /* content section 2*/
 .collection {
-    margin-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 98px;
 }
 .new-collection {
     font-size: 48px;
