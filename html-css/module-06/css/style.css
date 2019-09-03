@@ -31,12 +31,20 @@ img{
 
 }
 .main-logo {
+    margin: 0;
+    padding: 0;
+}
+.main-logo a{
+    display: block;
     font-size: 30px;
     color: #95e1d3;
     font-weight: 700;
     text-transform: uppercase;
-    margin: 0;
-    padding: 0;
+    text-decoration: none;
+    transition: all 200ms linear;
+}
+.main-logo a:hover{
+text-shadow: 2px 2px 0 #375f58;
 }
 .main-menu{
     display: flex;
@@ -48,6 +56,7 @@ img{
     list-style: none;
 }
 .menu-link{
+    display: block;
     color: #95e1d3;
     text-transform: uppercase;
     text-decoration: none;
@@ -257,6 +266,7 @@ img{
     height: 470px;
     background-image: linear-gradient( 360deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
     opacity: 0;
+    transition: all 200ms linear;
 
 }
 .card-button{
@@ -269,16 +279,20 @@ img{
     margin: 0 auto;
     padding: 0;
 }
+.card-button li{
+    margin-right: 1px;
+}
 .image-button{
+    display: block;
     width: 56px;
     height: 56px;
     background-color: #fce38a;
     background-repeat: no-repeat;
     background-position: center;
     border: none;
-    margin-right: 1px;
+    
 }
-.card-button:last-child{
+.card-button :last-child{
     margin-right: 0px;
 }
 .facebook-button{
@@ -293,6 +307,11 @@ img{
 .instagram-button{
     background-image: url(../img/icons/instagram.png);
 }
+.matthew_dix,
+.christopher_campbell,
+.michael_fertig{
+    transition: all 200ms linear;
+}
 .team-item:hover .matthew_dix,
 .team-item:hover .christopher_campbell,
 .team-item:hover .michael_fertig {
@@ -300,7 +319,7 @@ img{
     left: -10px;
     opacity: 1;
     box-shadow: 10px 10px 0px 0px #95e1d3;
-    transition: all 200ms linear;
+    
 }
 .image-button:hover {
     background-color: #95e1d3;
@@ -308,12 +327,9 @@ img{
 
   
 /* footer */
-.main-footer::before {
-    display: block;
-    width: 1200px;
-    height: 1px;
-    background-color: #e5e5e5;
-    content: '';
+.main-footer {
+    border-top: 1px solid #e5e5e5;
+   
 }
 .footer-item{
     display: flex;
@@ -368,8 +384,8 @@ form{
     line-height: 17px;
     text-align: center;
     cursor: pointer;
+    transition: color 200ms linear;
 }
 [value="SUBSCRIBE"]:hover{
 color: #126657;
-transition: color 200ms linear;
 }
