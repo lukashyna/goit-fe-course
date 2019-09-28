@@ -53,19 +53,11 @@ img{
     max-width: 100%;
     height: auto;
 }
-.container{
-    margin: 0 auto;
-}
 /* header navigation */
 .main-header{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-.log-sign{
-    display: flex;
-    justify-content: space-between;
-    width: 150px;
 }
 .log-sign a{
     display: block;
@@ -75,7 +67,6 @@ img{
     text-decoration: none;
     transition: all 200ms linear;
     border: 2px solid transparent;
-    
 }
 .log-sign a:hover{
     border: 2px solid #ffffff;
