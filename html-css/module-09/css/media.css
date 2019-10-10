@@ -68,6 +68,7 @@
         font-size: 52px;
     }
     .main-header p{
+        margin: 0 auto;
         margin-bottom: 18px;
         font-size: 24px;
     }
@@ -80,6 +81,7 @@
         padding-bottom: 40px;
     }
     .main-partners h3{
+        margin: 0 auto;
         margin-bottom: 30px;
     }
     .partners-list{
