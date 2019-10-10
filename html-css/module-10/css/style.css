@@ -283,9 +283,11 @@ img{
     background-color: #fce38a;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     border: none;
     margin-right: 1px;
 }
+
 .card-button:last-child{
     margin-right: 0px;
 }
