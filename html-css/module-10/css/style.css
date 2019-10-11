@@ -30,6 +30,10 @@ img{
     margin: 0;
     padding: 0;
 }
+.link{
+    text-transform: uppercase;
+    text-decoration: none;
+}
 .headline{
     margin: 0;
     padding: 0;
@@ -69,8 +73,6 @@ img{
 .main-menu_link{
     color: #ffffff;
     fill: #ffffff;
-    text-transform: uppercase;
-    text-decoration: none;
 }
 .main-menu_link::after{
     display: block;
