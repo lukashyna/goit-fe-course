@@ -40,7 +40,7 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
-$icons: icon-1, icon-2, icon-3, icon-4, icon-5, icon-6;
+$icons: photography, web-desing, creativity, seo, css-html, digital;
 
 @include generate-pseudo-icons(
   'services_item--',

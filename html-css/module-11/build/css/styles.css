@@ -401,8 +401,8 @@ img {
 
 .main-menu,
 .services_list,
-.team_list,
-.card-button {
+.card-button,
+.team_list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -428,7 +428,7 @@ img {
 }
 
 .main-header {
-  background: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9)), url(../image/background.png);
+  background: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9)), url(../images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -607,83 +607,28 @@ img {
   background-size: contain;
 }
 
-.services_item--icon-1::before {
-  background-image: url(../images/services/icon-1.png);
+.services_item--photography::before {
+  background-image: url(../images/services/photography.png);
 }
 
-.services_item--icon-2::before {
-  background-image: url(../images/services/icon-2.png);
+.services_item--web-desing::before {
+  background-image: url(../images/services/web-desing.png);
 }
 
-.services_item--icon-3::before {
-  background-image: url(../images/services/icon-3.png);
+.services_item--creativity::before {
+  background-image: url(../images/services/creativity.png);
 }
 
-.services_item--icon-4::before {
-  background-image: url(../images/services/icon-4.png);
+.services_item--seo::before {
+  background-image: url(../images/services/seo.png);
 }
 
-.services_item--icon-5::before {
-  background-image: url(../images/services/icon-5.png);
+.services_item--css-html::before {
+  background-image: url(../images/services/css-html.png);
 }
 
-.services_item--icon-6::before {
-  background-image: url(../images/services/icon-6.png);
-}
-
-.team {
-  padding-bottom: 77px;
-}
-
-.team_title {
-  margin: 0 auto;
-  margin-bottom: 90px;
-  font-size: 15px;
-  font-family: "Roboto";
-  color: #999999;
-  line-height: 24px;
-  text-align: center;
-  width: 945px;
-}
-
-.team_list {
-  justify-content: space-between;
-}
-
-.team_item {
-  position: relative;
-  width: 380px;
-}
-
-.team_item-name {
-  margin: 30px auto 10px;
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
-  color: #333333;
-  font-weight: 400;
-  text-transform: uppercase;
-  line-height: 17px;
-  text-align: center;
-}
-
-.team_item-position {
-  font-size: 15px;
-  font-family: "Roboto";
-  color: #999999;
-  font-style: italic;
-  line-height: 24px;
-  font-weight: 300;
-  text-align: center;
-}
-
-.team_item-position:hover .team_matthew,
-.team_item-position:hover .team_christopher,
-.team_item-position:hover .team_michael {
-  top: -10px;
-  left: -10px;
-  opacity: 1;
-  box-shadow: 10px 10px 0px 0px #95e1d3;
-  transition: all 200ms linear;
+.services_item--digital::before {
+  background-image: url(../images/services/digital.png);
 }
 
 .card {
@@ -714,7 +659,7 @@ img {
 }
 
 .card-button_image {
-  display: "all";
+  display: block;
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
@@ -732,6 +677,61 @@ img {
 .card-button_image:hover {
   background-color: #f38181;
   fill: #ffffff;
+}
+
+.team {
+  padding-bottom: 77px;
+}
+
+.team_title {
+  margin: 0 auto;
+  margin-bottom: 90px;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: #999999;
+  line-height: 24px;
+  text-align: center;
+  width: 945px;
+}
+
+.team_list {
+  justify-content: space-between;
+}
+
+.team_item {
+  position: relative;
+  width: 380px;
+}
+
+.team_item:hover .team_matthew,
+.team_item:hover .team_christopher,
+.team_item:hover .team_michael {
+  top: -10px;
+  left: -10px;
+  opacity: 1;
+  box-shadow: 10px 10px 0px 0px #95e1d3;
+  transition: all 200ms linear;
+}
+
+.team_item-name {
+  margin: 30px auto 10px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 17px;
+  text-align: center;
+}
+
+.team_item-position {
+  font-size: 15px;
+  font-family: "Roboto";
+  color: #999999;
+  font-style: italic;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
 }
 
 .main-footer::before {
@@ -805,6 +805,6 @@ img {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .main-header {
-    background: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9)), url(../image/background@2x.png);
+    background: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9)), url(../images/background@2x.png);
   }
 }

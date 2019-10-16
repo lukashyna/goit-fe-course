@@ -18,6 +18,15 @@
 .team_item{
     position: relative;
     width: 380px;
+    &:hover .team_matthew,
+    &:hover .team_christopher,
+    &:hover .team_michael {
+        top: -10px;
+        left: -10px;
+        opacity: 1;
+        box-shadow: 10px 10px 0px 0px #95e1d3;
+        transition: all 200ms linear;
+        }
 }
 .team_item-name{
     margin: 30px auto 10px;
@@ -38,13 +47,4 @@
     line-height: 24px;
     font-weight: 300;
     text-align: center;
-    &:hover .team_matthew,
-    &:hover .team_christopher,
-    &:hover .team_michael {
-        top: -10px;
-        left: -10px;
-        opacity: 1;
-        box-shadow: 10px 10px 0px 0px #95e1d3;
-        transition: all 200ms linear;
-        }
-    }
+}

@@ -1,5 +1,5 @@
-@mixin link($display: block, $trans: uppercase, $decor: none){
-    display: $display;
+@mixin link($displ: block, $trans: uppercase, $decor: none){
+    display: $displ;
     text-transform: $trans;
     text-decoration: $decor;
 }

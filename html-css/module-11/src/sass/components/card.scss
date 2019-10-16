@@ -23,7 +23,7 @@
     margin-right: 0px;
 }
 .card-button_image{
-    @include link ('all');
+    @include link ();
     position: relative;
     width: 56px;
     height: 56px;
