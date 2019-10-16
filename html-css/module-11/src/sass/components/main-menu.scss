@@ -6,11 +6,10 @@
         color: $primary-active-color;
         fill: $primary-active-color;
         transition: color 200ms linear;
-    &_item:hover &_link::after{
-        opacity: 1;
-        transition: all 200ms linear;
     }
-}
+}  .main-menu_item:hover .main-menu_link::after{
+    opacity: 1;
+    transition: all 200ms linear;
 }
 .main-menu_link{
    @include link('all');
