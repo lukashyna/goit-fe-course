@@ -1,0 +1,21 @@
+
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: $main-font-style;
+    color: $primary-color;
+    font-size: $main-text-size;
+    line-height: $main-text-height;
+}
+img{
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

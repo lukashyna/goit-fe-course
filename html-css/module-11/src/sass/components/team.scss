@@ -1,0 +1,50 @@
+.team{
+    padding-bottom: 77px;
+}
+.team_title{
+    margin: 0 auto;
+    margin-bottom: 90px;
+    font-size: 15px;
+    font-family: $font-style;
+    color: $primary-color;
+    line-height: 24px;
+    text-align: center;
+    width: 945px;
+}
+.team_list {
+    @extend %list;
+    justify-content: space-between;
+}
+.team_item{
+    position: relative;
+    width: 380px;
+}
+.team_item-name{
+    margin: 30px auto 10px;
+    font-size: 14px;
+    font-family: $main-font-style;
+    color: $secondary-color;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 17px;
+    text-align: center;
+}
+.team_item-position{
+    @extend %headline;
+    font-size: 15px;
+    font-family: $font-style;
+    color: $primary-color;
+    font-style: italic;
+    line-height: 24px;
+    font-weight: 300;
+    text-align: center;
+    &:hover .team_matthew,
+    &:hover .team_christopher,
+    &:hover .team_michael {
+        top: -10px;
+        left: -10px;
+        opacity: 1;
+        box-shadow: 10px 10px 0px 0px #95e1d3;
+        transition: all 200ms linear;
+        }
+    }

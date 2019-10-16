@@ -1,0 +1,7 @@
+.main-logo {
+    @extend %headline;
+    font-size: 30px;
+    color: $primary-white-color;
+    font-weight: 700;
+    text-transform: uppercase;
+}

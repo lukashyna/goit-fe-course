@@ -1,0 +1,68 @@
+.services{
+    padding-top: 98px;
+    padding-bottom: 84px;
+}
+.services_list {
+    @extend %list;
+    justify-content: space-between;
+    padding-left: 22px;
+    padding-top: 24px;
+}
+.services_item{
+    position: relative;
+    width: 335px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.services_item-title{
+    @extend %headline;
+    margin-bottom: 13px;
+    font-weight: 400;
+    color: $secondary-color;
+    text-transform: uppercase;
+}
+.services_item-text{
+    @extend %headline;
+    font-size: 15px;
+    font-family: $font-style;
+    line-height: 24px;
+}
+.services_item:not(:nth-last-child(-n+3)) {
+    margin-bottom: 96px;
+}
+.services_item::before{
+    float: left;
+    display: block;
+    content: '';
+    width: 32px;
+    height: 32px;
+    margin: 5px 30px 30px 0px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+$icons: icon-1, icon-2, icon-3, icon-4, icon-5, icon-6;
+
+@include generate-pseudo-icons(
+  'services_item--',
+  $icons,
+  '../images/services/',
+  'png'
+);
+// .services_item--photography::before{
+//     background-image: url(../img/icons/icon-1.svg);
+// }
+// .services_item--web-desing::before{
+//     background-image: url(../img/icons/icon-2.svg)
+// }
+// .services_item--creativity::before{
+//     background-image: url(../img/icons/icon-3.svg)
+// }
+// .services_item--seo::before{
+//     background-image: url(../img/icons/icon-4.svg)
+// }
+// .services_item--css-html::before{
+//     background-image: url(../img/icons/icon-5.svg)
+// }
+// .services_item--digital::before{
+//     background-image: url(../img/icons/icon-6.svg)
+// }

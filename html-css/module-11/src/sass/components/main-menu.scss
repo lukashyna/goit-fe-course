@@ -1,0 +1,33 @@
+.main-menu {
+    @extend%list;
+    justify-content: space-between;
+    width: 620px;
+    &_item:hover &_link{  
+        color: $primary-active-color;
+        fill: $primary-active-color;
+        transition: color 200ms linear;
+    &_item:hover &_link::after{
+        opacity: 1;
+        transition: all 200ms linear;
+    }
+}
+}
+.main-menu_link{
+   @include link('all');
+   color: $primary-white-color;
+   fill: $primary-white-color;
+}
+.main-menu_link::after{
+    display: block;
+    opacity: 0;
+    width: 50px;
+    height: 3px;
+    background-color: $primary-active-color;
+    content: '';
+    margin: 0 auto;
+    margin-top: 12px;
+    &:focus{
+        color: $primary-active-color;
+        fill: $primary-active-color;
+    }
+}

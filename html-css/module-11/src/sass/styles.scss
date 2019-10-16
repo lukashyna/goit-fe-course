@@ -1,0 +1,24 @@
+/*
+   Import partials below
+*/
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'normalize';
+@import 'base';
+@import 'helpers/placeholder';
+// commponents
+@import 'components/container';
+@import 'components/main-header';
+@import 'components/main-menu';
+@import 'components/main-logo';
+@import 'components/main-nav';
+@import 'components/main-slogan';
+@import 'components/main-welcome';
+@import 'components/italic-item';
+@import 'components/bold-item';
+@import 'components/learn-more';
+@import 'components/services';
+@import 'components/team';
+@import 'components/card';
+@import 'components/main-footer';
+@import 'components/form';

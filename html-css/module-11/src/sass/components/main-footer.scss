@@ -1,0 +1,25 @@
+.main-footer::before {
+    display: block;
+    width: 1200px;
+    height: 1px;
+    background-color: #e5e5e5;
+    content: '';
+}
+.main-footer_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 63px;
+}
+.main-footer_item-text{
+    @extend %headline;
+    font-size: 14px;
+    font-family: $main-font-style;
+    color: $secondary-color;
+    line-height: 17px;
+}
+.main-footer_item-link{
+    color: $secondary-active-color;
+    text-decoration: none;
+}
+

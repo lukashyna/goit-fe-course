@@ -1,0 +1,10 @@
+.main-welcome{
+    @extend %headline;
+    font-size: 150px;
+    font-family: $main-font-style;
+    color: $primary-white-color;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 110px;
+}
