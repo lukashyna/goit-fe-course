@@ -1,7 +1,7 @@
 .main-slogan{
     @extend %headline;
     font-size: 72px;
-    font-family: "Kaushan Script", cursive;
+    font-family: $font-italic-style;
     color: $primary-white-color;
     text-align: center;
     margin-bottom: 20px;

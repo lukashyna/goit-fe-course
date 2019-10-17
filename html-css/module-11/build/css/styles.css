@@ -490,7 +490,7 @@ img {
 
 .main-slogan {
   font-size: 72px;
-  font-family: "Kaushan Script", cursive;
+  font-family: "Kaushan Script";
   color: #ffffff;
   text-align: center;
   margin-bottom: 20px;
@@ -543,7 +543,7 @@ img {
   margin: 0 520px 230px;
   padding: 14px;
   font-size: 14px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
