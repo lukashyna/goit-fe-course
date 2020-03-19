@@ -6,9 +6,13 @@
     <link rel="stylesheet" href="./css/normallize.css" />
     <link rel="stylesheet" href="./slick/slick.css" />
     <link rel="stylesheet" href="./slick/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
 
-    <title>Document</title>
+    <title>Eclipse</title>
   </head>
   <body>
     <header class="main-header ">
@@ -130,7 +134,7 @@
           </div>
         </div>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav" id="main-nav">
         <div class="container">
           <ul class="main-menu list">
             <li class="menu-item">
@@ -153,8 +157,8 @@
       <section class="eclipse">
         <div class="container box3">
           <p class="eclipse-text headline">
-            Eclipse — имя самого быстрого в мире скакунаю Он выиграл все забеги,
-            в которых учавствовалю Само появление живой легенды на ипподроме
+            Eclipse — имя самого быстрого в мире. Он выиграл все забеги, в
+            которых учавствовал. Само появление живой легенды на ипподроме
             лишало соперников малейших шансов на победу.
           </p>
           <p class="eclipse-text headline">
@@ -164,7 +168,7 @@
             результат.
           </p>
           <p class="eclipse-text headline">
-            И мы его гарантируемю Скорость наших переводов обеспечивает команда
+            И мы его гарантируем. Скорость наших переводов обеспечивает команда
             из более чем 1200 профессиональных лингвистов со всего мира. И
             оперативность новейших CAT-технологий.
           </p>
@@ -190,47 +194,68 @@
           придется платить за многократный перевод повторяющихся фрагментов
           текста.
         </p>
-        <div class="flexbox box4">
-          <ul class="tehnology-list list">
-            <li class="tehnology-item flexbox ">
-              <img class="slide-img" src="./img/statistic/slide1.jpg" alt="" />
-              <div class="slider-excel">
-                <p class="slide-number headline">1</p>
-                <p class="slide-text headline">
-                  Наш переводчик выполняет перевод термина/фразы/предложения
-                </p>
-              </div>
-            </li>
-            <!-- <li class="tehnology-item flexbox ">
-              <img class="slide-img" src="./img/statistic/slide2.jpg" alt=""/>
-               <div class="slider-excel">
-                 <p class="slide-number headline">2</p>
-                 <p class="slide-text headline">Перевод сохраняется в памяти переводов (Translation Memory)</p>
-               </div>
-           </li>
-           <li class="tehnology-item flexbox ">
-            <img class="slide-img" src="./img/statistic/slide3.jpg" alt=""/>
-             <div class="slider-excel">
-               <p class="slide-number headline">3</p>
-               <p class="slide-text headline">Система автоматически использует то же значение для всех последующих случаев, экономя время и ваш бюджет</p>
-             </div>
-           </li>
-           <li class="tehnology-item flexbox ">
-            <img class="slide-img" src="./img/statistic/slide4.jpg" alt=""/>
-             <div class="slider-excel">
+        <ul class="tehnology-list list">
+          <li class="tehnology-item flexbox ">
+            <a data-fancybox="gallery" href="./img/statistic/slide1.jpg"
+              ><img class="slide-img" src="./img/statistic/slide1.jpg" alt=""
+            /></a>
+            <div class="slider-excel">
+              <p class="slide-number headline">1</p>
+              <p class="slide-text headline">
+                Наш переводчик выполняет перевод термина/фразы/предложения
+              </p>
+            </div>
+          </li>
+          <li class="tehnology-item flexbox ">
+            <a data-fancybox="gallery" href="./img/statistic/slide2.jpg"
+              ><img class="slide-img" src="./img/statistic/slide2.jpg" alt=""
+            /></a>
+            <div class="slider-excel">
+              <p class="slide-number headline">2</p>
+              <p class="slide-text headline">
+                Перевод сохраняется в памяти переводов (Translation Memory)
+              </p>
+            </div>
+          </li>
+          <li class="tehnology-item flexbox ">
+            <a data-fancybox="gallery" href="./img/statistic/slide3.jpg"
+              ><img class="slide-img" src="./img/statistic/slide3.jpg" alt=""
+            /></a>
+
+            <div class="slider-excel">
+              <p class="slide-number headline">3</p>
+              <p class="slide-text headline">
+                Система автоматически использует то же значение для всех
+                последующих случаев, экономя время и ваш бюджет
+              </p>
+            </div>
+          </li>
+          <li class="tehnology-item flexbox ">
+            <a data-fancybox="gallery" href="./img/statistic/slide4.jpg"
+              ><img class="slide-img" src="./img/statistic/slide4.jpg" alt=""
+            /></a>
+
+            <div class="slider-excel">
               <p class="slide-number headline">4</p>
-              <p class="slide-text headline">По мере наполнения памяти переводов (Translation Memory) вы все больше и больше экономите время и ваш бюджет</p>
-           </div>
-           </li>
-           <li class="tehnology-item flexbox ">
-            <img class="slide-img" src="./img/statistic/slide5.jpg" alt=""/>
-             <div class="slider-excel">
-               <p class="slide-number headline">5</p>
-               <p class="slide-text headline">Больше текстов — перевод быстрее и выгоднее!</p>
-             </div>
-          </li> -->
-          </ul>
-        </div>
+              <p class="slide-text headline">
+                По мере наполнения памяти переводов (Translation Memory) вы все
+                больше и больше экономите время и ваш бюджет
+              </p>
+            </div>
+          </li>
+          <li class="tehnology-item flexbox ">
+            <a data-fancybox="gallery" href="./img/statistic/slide5.jpg"
+              ><img class="slide-img" src="./img/statistic/slide5.jpg" alt=""
+            /></a>
+
+            <div class="slider-excel">
+              <p class="slide-number headline">5</p>
+              <p class="slide-text headline">
+                Больше текстов — перевод быстрее и выгоднее!
+              </p>
+            </div>
+          </li>
+        </ul>
       </section>
       <section class="advantage container">
         <p class="advantage-title headline">
@@ -268,7 +293,7 @@
         <div class="recomend-slider">
           <div class="container">
             <div class="box5">
-              <ul class="slide-list">
+              <ul class="slide-list list">
                 <li class="slide-item">
                   <p class="headline slider-title">Оперативность переводов</p>
                   <p class="headline slider-item">
@@ -331,9 +356,12 @@
               </div>
               <div class="load-submit">
                 <p class="headline load-submit_title">Загрузить файл</p>
-                <!-- <input class="load-submit_title" type="file" /> -->
-                <button class="button-callback" type="submit">отправить</button>
-                <p class="headline visually-hidden sent-request2">
+                <label for="pct"></label>
+                <input type="file" id="pct" />
+                <button class="button-callback button7" type="submit">
+                  отправить
+                </button>
+                <p class="headline visually-hidden sent-request">
                   Спасибо, ваш файл отправлен.
                 </p>
               </div>
@@ -352,7 +380,7 @@
         </p>
         <p class="headline analytics-text2">
           Даже при одинаковом объеме текстов стоимость перевода будет разной.
-          Чем чаще повторяются фразы в документах, тем больше экономия.
+          Чем чаще повторяются фразы в документах,тем больше экономия.
         </p>
 
         <ul class="analitics-list list">
@@ -388,7 +416,7 @@
             <img class="fist-reason" src="./img/pict/pict1.jpg" alt="" />
             <div class="card card1">
               <p class="headline card-text">
-                Переводчики-консультанты,<br />которые будут сопроваждать вас<br />в
+                Переводчики-консультанты,<br />которые будут сопровождать вас<br />в
                 заграничной командировке
               </p>
             </div>
@@ -418,14 +446,14 @@
             <img class="fifth-reason" src="./img/pict/pict5.jpg" alt="" />
             <div class="card card5">
               <p class="headline card-text">
-                Переводчики под конкретный запрос - мужчины и женщины, молодые и
+                Переводчики под конкретный запрос — мужчины и женщины, молодые и
                 пожилые, брюнеты и блондинки, европейцы и азиаты и т.д.
               </p>
             </div>
             <img class="sixth-reason" src="./img/pict/pict6.jpg" alt="" />
             <div class="card card6">
               <p class="headline card-text">
-                Переводчики для<br />срочных мероприятий -<br />у нас есть
+                Переводчики для<br />срочных мероприятий —<br />у нас есть
                 специалисты, готовые помочь вам<br />прямо сейчас
               </p>
             </div>
@@ -550,12 +578,7 @@
             </p>
             <input type="text" name="name" placeholder="Введите имя:" />
             <input type="tel" placeholder="Введите телефон:" />
-            <textarea
-              name="questions"
-              cols="28"
-              rows="3"
-              placeholder="Ваш вопрос:"
-            ></textarea>
+            <textarea name="questions" placeholder="Ваш вопрос:"></textarea>
             <button class="button-callback button5" type="submit">
               Спросить
             </button>
@@ -602,5 +625,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
     <script src="./slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   </body>
 </html>
