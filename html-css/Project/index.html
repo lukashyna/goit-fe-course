@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="./css/normallize.css" />
     <link rel="stylesheet" href="./slick/slick.css" />
     <link rel="stylesheet" href="./slick/slick-theme.css" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
     />
+
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>Eclipse</title>
@@ -17,9 +19,9 @@
   <body>
     <header class="main-header ">
       <div class="container flexbox box">
-        <h1 class="main-logo headline">
+        <div class="main-logo headline">
           <a href="#"><img src="./img/logo/gen-logo.png" alt=""/></a>
-        </h1>
+        </div>
         <div>
           <ul class="languages list">
             <li class="languages-item">
@@ -47,8 +49,16 @@
           <p class="company-task headline">
             Письменные и устные переводы <br />для вашего бизнеса
           </p>
-          <p class="company-number headline">+7 /495/ 223 92 26</p>
-          <p class="company-mail headline">info@buro-eclipse.ru</p>
+          <p class=" headline">
+            <a class="company-number link" href="tel:+74952239226">
+              +7 /495/ 223 92 26
+            </a>
+          </p>
+          <p class=" headline">
+            <a class="company-mail link" href="mailto:info@buro-eclipse.ru"
+              >info@buro-eclipse.ru</a
+            >
+          </p>
           <a href="#" class="button-callback button1 link">обратный звонок</a>
         </div>
       </div>
@@ -280,7 +290,7 @@
         <a href="#" class="button-callback button3 link">заказать перевод</a>
       </section>
       <section class="recomend">
-        <div class="container flexbox">
+        <div class="container flexbox box1">
           <p class="headline recomend-percent">73%</p>
           <div class="recomend-text">
             <p class="headline recomend-text_a">новых клиентов</p>
@@ -465,17 +475,19 @@
             </div>
           </div>
           <div class="eclipse-reason">
-            <p class="reason-title headline">7 причин</p>
-            <p class="reason-title_a headline">
-              обратиться&nbsp;в&nbsp;Eclipse,
-            </p>
-            <p class="reason-title_b headline">
-              если вы ищите<br />устного&nbsp;переводчика
-            </p>
-            <p class="reason-item headline">
-              В Eclipse вам подберут квалифицированного переводчика для любой
-              ситуации
-            </p>
+            <div class="reason-text">
+              <p class="reason-title headline">7 причин</p>
+              <p class="reason-title_a headline">
+                обратиться&nbsp;в&nbsp;Eclipse,
+              </p>
+              <p class="reason-title_b headline">
+                если вы ищите<br />устного&nbsp;переводчика
+              </p>
+              <p class="reason-item headline">
+                В Eclipse вам подберут квалифицированного переводчика для любой
+                ситуации
+              </p>
+            </div>
             <form action="#" id="order-interpretation">
               <p class="headline order-interpretation_text">
                 Мы предложим вам лучшее решение для вашей задачи:
@@ -563,12 +575,29 @@
         </ul>
       </section>
       <section class="contact">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d35894.13286200611!2d37.50816483706461!3d55.7865818493494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1584699935388!5m2!1sru!2sua"
+          style="border:0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
         <div class="container box6">
           <div class="contact-text">
-            <p class="headline contact-tel">+7 (495) 223 92 26</p>
-            <p class="headline contact-email">info@buro-eclipse.ru</p>
+            <p class="headline">
+              <a class="contact-tel link" href="tel:+74952239226">
+                +7 /495/ 223 92 26
+              </a>
+            </p>
+            <p class="headline ">
+              <a class="contact-email link" href="mailto:info@buro-eclipse.ru"
+                >info@buro-eclipse.ru</a
+              >
+            </p>
             <p class="headline contact-address">
-              Москва <br />Строительный проезд, 7А, к. 1, оф. 2
+              Москва <br />Строительный проезд,
+              7А,&nbsp;к.&nbsp;1,&nbsp;оф.&nbsp;2
             </p>
           </div>
           <form action="#" id="question">
@@ -587,6 +616,7 @@
             </p>
           </form>
         </div>
+        <div id="map"></div>
       </section>
     </main>
     <footer class="footer">
@@ -622,9 +652,9 @@
         <p class="headline developer">Рaзработано в</p>
       </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="index.js"></script>
     <script src="./slick/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   </body>
 </html>

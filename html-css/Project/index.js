@@ -6,8 +6,10 @@ refs = {
   fifthButton: document.querySelector(".button5"),
   sixthButton: document.querySelector(".button6"),
   seventhButton: document.querySelector(".button7"),
-  modalForm: document.querySelector(".lightbox"),
+  modalForm: document.querySelector(".js-lightbox"),
   closeForm: document.querySelector(".lightbox__button"),
+  overlay: document.querySelector(".lightbox__overlay"),
+  content: document.querySelector(".lightbox__content"),
   sentRequest: document.querySelector(".sent-request"),
   sentRequestTwo: document.querySelector(".sent-request2"),
   sentRequestFour: document.querySelector(".sent-request4"),
@@ -30,6 +32,12 @@ function openModalForm(event) {
 function closeModalForm(event) {
   event.preventDefault();
   removeData();
+}
+
+function closeModalOverlay(event) {
+  if (event.target === refs.content) {
+    removeData();
+  }
 }
 window.onscroll = function() {
   myFunction();
@@ -84,6 +92,7 @@ function sentRequest4() {
 refs.firstButton.addEventListener(`click`, openModalForm);
 refs.thirdButton.addEventListener(`click`, openModalForm);
 refs.closeForm.addEventListener(`click`, closeModalForm);
+refs.modalForm.addEventListener(`click`, closeModalOverlay);
 refs.secondButton.addEventListener(`click`, sentRequest1);
 refs.fourthButton.addEventListener(`click`, sentRequest2);
 refs.fifthButton.addEventListener(`click`, sentRequest3);
